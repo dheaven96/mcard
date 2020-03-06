@@ -1,13 +1,15 @@
-<html 문서는 문서 유형 선언으로 시작해야한다>
-<!doctype html>
+{시멘틱 마크업}
 
-html 문서는 <html>시작하고 </html>로 끝남
-문서에서 보이는 부분은 <body></body>
-
+<<html 문서형식>>
+1.html 문서는 문서 유형 선언으로 시작해야한다
+  <!doctype html>  -->html5 버전
+2.html 문서는 <html>시작하고 </html>로 끝남
+3.문서에서 보이는 부분은 <body></body>
 <!doctype html>
 
 <html>
   <head>
+    <title>김철수*김영희 모바일청첩장</title>
   </head>
      <body>
 
@@ -15,18 +17,103 @@ html 문서는 <html>시작하고 </html>로 끝남
 </html>
 
 
-<html 스타일 표현방법>
+
+[[[ head ]]]
+<!--<meta> 요소-->
+1.문자세트정의
+<meta charset="UTF-8">
+2.웹페이지에 대한 설명
+<meta name="description" content="모바일 청첩장">
+3.검색 엔진에 대한 키워드 정보
+<meta name="keywords" content="mobilecard, wedding, 청첩장, 바른손">
+4.페이지 작성자 정보
+<meta name="author" content="Hevin">
+5.뷰포트 설정
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<!--<link> 요소-->
+1.<link rel="stylesheet" type="text/css" href="http">
+2.<link rel="stylesheet"   >
+
+<!--<style> 요소 3번-->
+<<html 스타일 표현방법>>
 0.스타일 속성없이 태그만으로 코딩(온리 )
 
-1.스타일 속성을 태그안에 사용하여 CSS코딩(인라인 스타일 시트)
+1.스타일 속성을 태그안에 사용하여 CSS코딩 (인라인 스타일 시트)
 
-2.스타일을 헤더 부분에 따로 코딩(인터널 스타일 시트)--3/4수
+2.스타일을 헤더 부분에 따로 코딩 (인터널 스타일 시트)--3/4수
 <head>
 
 </head>
 
 3.(링킹 스타일 시트)
 
-00.클래스 id 사용해서 css코딩(클래스 아이디)
+00.클래스 id 사용해서 css코딩 (클래스:중복여러개/아이디:1개)--3/6금
+
+<!--<script> 요소-->
+1.스크립트 문 쓰기
+<script>
+  function today0306 {
+      document.getElementById("map").innerHTML="Hello Javascript";
+  }
+  
+</script>
+
+2.스크립트 파일 불러오기
+
+<!--<base> 요소-->
+url지정
+
+<!--파비콘-->
+<link rel="">
 
 
+
+[[[ body ]]]
+<!--제목태그-->
+<h1> ~ <h6>
+
+<!--  태그-->
+<hr>:수평(선)규칙-----
+<p>:단락(공백)
+<br>:줄바꿈(단락X)
+<pre>:요소 내부의 텍스트는 공백과 줄 바꿈을 모두 유지
+
+<!--텍스트태그-->
+<b>굵은  --의미있는 태그--> <strong>중요한 
+<i>이텔릭체 --의미있는 태그--> <em>강조된(기울기)
+<mark>표시된(색칠)
+<small>작은
+<del>삭제 된(중간에 줄긋기)  
+  <ins>삽입된(밑에 줄긋기)
+<sub>아래첨자  <sup>위첨자
+
+<!--목록태그(list)-->
+1.<ul>순서가 없는(div대신)    <li>목록항목</li>
+2.<ol>순서가 있는(순번이 붙음)  <li>목록항목</li>
+3.<dl>설명목록을 정의
+  <dt>감독</dt>  <dd>봉준호</dd>
+
+<!--그룹핑 태그-->
+<div>구분 또는 섹션을 의미 
+  <section>의미기준으로 그룹핑
+
+<span>
+:문서에서 인라인 요소를 그룹화하는데 사용
+그 자체로는 시각적인 변화를 제공하지 않음
+텍스트 또는 문서의 일부에 후크를 추가하는 방법을 제공
+
+블록 레벨 요소 : 항상 새 줄에서 시작
+인라인 레벨 요소 :
+
+<!--인용 태그-->
+<q>짧은 인용
+  <blockquote>긴 인용
+  
+<abbr>약어(툴팁)
+  <p><abbr title="C Style Sheet">CSS</abbr>의 약자는?</p>
+
+<address>주소를 의미 (이탤릭체로 변경)
+<cite>작품의 제목을 정의 (이탤릭체로 변경)
+
+  

@@ -2,8 +2,14 @@
 
 <html>
 <head>
-   <meta name="viewport" content="width=device-width, user-scalable=no">
-   <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <title>김철수*김영희 모바일청첩장</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="모바일 청첩장">
+  <meta name="keywords" content="mobilecard, wedding, 청첩장, 바른손">
+  <meta name="author" content="Hevin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap">
 
    <style>
      body {font-family: 'Nanum Myeongjo'; margin:0; padding:0; border:0; font-size:12px;} 
@@ -12,18 +18,29 @@
      h3 {text-align:center; margin-top:72px; font-size:12px; font-weight:100;}
      p {text-align: center; font-weight:100; margin:0;}
      a {color:white; text-decoration:none;}
+    
+    img, p, ul, li {margin:0; padding:0; border:0;}
 
+    #map {background-color: red;}
    </style>
 
+  <script>
+    function today0306 {
+        document.getElementById("map").innerHTML="Hello Javascript";
+    }
+
+  </script>
 
 </head>
 
-
+<body>
 <!-- 첫페이지 -->
 <div style="height:100vh; width:100vw; background-image: url(img/plant-03.jpg); background-size:cover; background-position:center;"> <!-- 첫페이지 열기-->
   <div style="padding-top:240px;"></div>
 
     <h1>우리 결혼합니다.</h1>
+    <hr>
+
     <h2>02/22</h2>
 
     <h3>김철수*김영희</h3>
@@ -52,38 +69,36 @@
   </p>
 </div>
 
-<P style="color:white; background-color:#647e55; line-height:48px; margin-top:20px; font-size: 20px;">혼주분께 연락하기</P>
+<ul style="background-color:#eaf1e7; padding-top:18px; padding-bottom:18px; margin: 0; padding: 0; border: 0;">
+  <P style="color:white; background-color:#647e55; line-height:48px; margin-top:20px; font-size: 20px;">혼주분께 연락하기</P>
 
-<div style="background-color:#eaf1e7; padding-top:18px; padding-bottom:18px;">
+  <li style="text-align: center; display:inline-block; width:50%; margin-left:-4px; font-size:14px;">
+     <p>신랑측 혼주</p>
+     <p>아버지 유도기</p>
+      <img src="img/call25.png" width="15px">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <img src="img/sms25.png" width="15px"><br><br>
+    <p>어머니 이순오</p>
+      <img src="img/call25.png" width="15px">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <img src="img/sms25.png" width="15px">
+  </li>
+    
+  <li style="text-align: center; display:inline-block; width:50%; margin-left:-4px; font-size:14px;">
+    <p>신부측 혼주</p>
+    <p>아버지 이도기</p>
+      <img src="img/call25.png" width="15px">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <img src="img/sms25.png" width="15px"><br><br>
+    <p>어머니 고순오</p>
+      <img src="img/call25.png" width="15px">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <img src="img/sms25.png" width="15px"><br>
+  </li>
+</ul>
 
-    <div style="display:inline-block; width:50%; margin-left:-4px;">
-       <p style="font-size:14px;">신랑측 혼주<br><br>
-         아버지 유도기<br>
-         <img src="img/call25.png" width="16px">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-         <img src="img/sms25.png" width="16px"><br><br>
-         어머니 이순오<br>
-         <img src="img/call25.png" width="16px">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-         <img src="img/sms25.png" width="16px">
-       </p>
-    </div>
-
-    <div style="display:inline-block; width:50%; margin-left:-4px;">
-        <p style="font-size:14px;">신부측 혼주<br><br>
-            아버지 이도기<br>
-            <img src="img/call25.png" width="16px">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-            <img src="img/sms25.png" width="16px"><br><br>
-            어머니 고순오<br>
-            <img src="img/call25.png" width="16px">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-            <img src="img/sms25.png" width="16px"><br>
-        </p>
-    </div>
-</div>
 
 <div style="margin-top:10px;">
 
   <img src="img/title_img_4.jpg" width="100%" style="padding-bottom:20px;">
   <img src="img/map.png" width="100%" style="margin-top:60px; margin:0; padding:0; border:0;">
-  <P style="color:white; background-color: gray; line-height:48px; margin:0; padding:0; border:0;">
+  <P id="map" style="color:white; line-height:48px; margin:0; padding:0; border:0;">
     <a href="http://map.kakao.com/">카카오맵 바로가기</a></P>
 </div>
 
@@ -109,20 +124,20 @@
     </p>
 </div>
 
-<div style="background-color: silver;">
-   <div style="display: inline-block; width:25%; margin-left:-4px;">
+<ul style="background-color: silver;">
+   <li style="display: inline-block; width:25%; margin-left:-4px;">
      <img src="img/btn_facebook.png" style="width:100%;">
-   </div>
-   <div style="display: inline-block; width:25%; margin-left:-4px;">
+   </li>
+   <li style="display: inline-block; width:25%; margin-left:-4px;">
      <img src="img/btn_twitter.png" style="width:100%;">
-   </div>
-   <div style="display: inline-block; width:25%; margin-left:-4px;">
+   </li>
+   <li style="display: inline-block; width:25%; margin-left:-4px;">
      <img src="img/btn_kakao.png" style="width:100%;">
-   </div>
-   <div style="display: inline-block; width:25%; margin-left:-4px;">
+   </li>
+   <li style="display: inline-block; width:25%; margin-left:-4px;">
      <img src="img/btn_story.png" style="width:100%;">
-   </div>
-</div>
+   </li>
+</ul>
 
 <p style="font-size:24px; color: darkgray; letter-spacing: 8px;">BHANDS&nbsp;CARD
 
