@@ -32,39 +32,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 <!--<link> 요소-->
-1.<link rel="stylesheet" type="text/css" href="http">
-2.<link rel="stylesheet"   >
+1.외부 스타일시트에 연결하는데 사용
+  <link rel="stylesheet" type="text/css" href="http://">
+2.미리 파일을 로드 하는경 우
+  <link rel="preload  ">
 
 <!--<style> 요소 3번-->
-<<html 스타일 표현방법>>
+<<html 스타일 표현방법>>---CSS네이밍규칙--숫자로 시작X/주로 소문자/의미구분은_-,공백X
+  여러 요소를 한 번에 선언할 수 있음/의미있는 이름으로 구조화(협업 유용)/
 0.스타일 속성없이 태그만으로 코딩(온리 )
-
 1.스타일 속성을 태그안에 사용하여 CSS코딩 (인라인 스타일 시트)
 
-2.스타일을 헤더 부분에 따로 코딩 (인터널 스타일 시트)--3/4수
-<head>
-
-</head>
-
-3.(링킹 스타일 시트)
-
-00.클래스 id 사용해서 css코딩 (클래스:중복여러개/아이디:1개)--3/6금
+2.스타일을 헤더 부분에 따로 코딩 (인터널 스타일 시트)
+ <head>
+  </head>
+3.스타일 파일을 불러 (링킹 스타일 시트)
+ <link href="css/common.css"   >
+00.클래스/아이디 사용해서 css코딩 (클래스&아이디)
+-class : 특수한 유형의 요소에 대한 스타일을 정의(중복)   .map {}
+-id : 하나의 특수 요소에 특정 스타일을 정의             #map {}
 
 <!--<script> 요소-->
 1.스크립트 문 쓰기
-<script>
-  function today0306 {
-      document.getElementById("map").innerHTML="Hello Javascript";
-  }
+ <script>
+   function today0306 {
+       document.getElementById("map").innerHTML="Hello Javascript";
+   }
   
-</script>
-
+ </script>
 2.스크립트 파일 불러오기
 
 <!--<base> 요소-->
 url지정
 
-<!--파비콘-->
+<!--파비콘(로고아이콘)-->
 <link rel="">
 
 
@@ -75,8 +76,8 @@ url지정
 
 <!--  태그-->
 <hr>:수평(선)규칙-----
-<p>:단락(공백)
-<br>:줄바꿈(단락X)
+<p>:문단 바꿈 (단락 구분)
+<br>:줄 바꿈
 <pre>:요소 내부의 텍스트는 공백과 줄 바꿈을 모두 유지
 
 <!--텍스트태그-->
@@ -91,12 +92,12 @@ url지정
 <!--목록태그(list)-->
 1.<ul>순서가 없는(div대신)    <li>목록항목</li>
 2.<ol>순서가 있는(순번이 붙음)  <li>목록항목</li>
-3.<dl>설명목록을 정의
+3.<dl>설명목록을 정의:기생충
   <dt>감독</dt>  <dd>봉준호</dd>
 
 <!--그룹핑 태그-->
-<div>구분 또는 섹션을 의미 
-  <section>의미기준으로 그룹핑
+<div>의미없이 그룹핑 (구분 또는 섹션을 의미) 
+  <section>의미 기준으로 그룹핑 (같은 문서의 섹션)
 
 <span>
 :문서에서 인라인 요소를 그룹화하는데 사용
@@ -111,9 +112,13 @@ url지정
   <blockquote>긴 인용
   
 <abbr>약어(툴팁)
-  <p><abbr title="C Style Sheet">CSS</abbr>의 약자는?</p>
+  <p><abbr title="Cascating Style Sheet">CSS</abbr>의 약자는?</p>
 
 <address>주소를 의미 (이탤릭체로 변경)
 <cite>작품의 제목을 정의 (이탤릭체로 변경)
+
+
+<!--라인 만드는 법-->
+  <div style="border-top: 5px solid red; width: 100px; height: 10px;"></div>
 
   
