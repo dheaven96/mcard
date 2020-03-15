@@ -5,6 +5,7 @@
   <!doctype html>  -->html5 버전
 2.html 문서는 <html>시작하고 </html>로 끝남
 3.문서에서 보이는 부분은 <body></body>
+
 <!doctype html>
 <html>
 <head>
@@ -116,8 +117,9 @@ url지정
 그 자체로는 시각적인 변화를 제공하지 않음
 텍스트 또는 문서의 일부에 후크를 추가하는 방법을 제공
 
-블록 레벨 요소 : 항상 새 줄에서 시작
-인라인 레벨 요소 :
+<!--블록 & 인라인-->
+블록 레벨 요소 : 항상 새 줄에서 시작하여 사용 가능한 젠체 너비를 차지
+인라인 레벨 요소 : 새 줄에서 시작되지 않으며 필요한 만큼만 폭을 차지  (<img>마진,패딩 값 적용 가능)
 
 <!--인용 태그-->
 <q>짧은 인용
@@ -131,6 +133,27 @@ url지정
 
 
 <!--라인 만드는 법-->
-  <div style="border-top: 5px solid red; width: 100px; height: 10px;"></div>
+  박스테두리 이용 <div style="border-top: 5px solid red; width: 100px; height: 10px;"></div>
+
+
+<!--css 배경-->
+  <div style="background-image: url(01_hello/hugeinc.png);">
+  <div style="background-repeat: no-repeat;"> 이미지 size가 작은 경우 패턴 반복 안되도록
+  <div style="background-size: cover;"> 이미지 size가 작은 경우 비율이 안깨지게 커버
+  <div style="background-position: right top;"> 이미지 위치 설정
+
+    컬러표현
+    그라디언트(요즘 트랜드) 코드가 따로 있음 --> https://cssgradient.io/
+
+  순서 background: color image repeat position 
+
+  오버플로우 넘치게 되면 잘림
+
+  {display: flex; justify-content: center; align-items: center;}
+    
+
+  
+
+
 
   
