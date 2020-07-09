@@ -216,13 +216,6 @@ background-position: right top; 이미지 위치 설정
 
 background순서: color image repeat position  - 속기속성 (shorthand property)
 
-
-<!-- 참고 사이트 -->
-그라디언트 컬러표현 코드가 따로 있음 --> https://cssgradient.io/
-웹브라우저 별 지원가능한 언어속성을 검색하면 알려줌 --> https://caniuse.com/
-doctype 별 문법 검사 --> https://validator.w3.org/
-
-
 <!--구글폰트에서 웹폰트 링크걸기-->
 
 
@@ -297,10 +290,10 @@ transition-duration  지속시간
 transition-timing-function  시기 선택
 transition-property  속성
 
-<!-- css 2.animation -->
+<!-- css 2.animation --> -키프레임 정의
 animation-timing-function  시기 선택
 
-<!-- css 3.transform -->
+<!-- css 3.transform --> -3D지원
 translate: 기준점 중심 잡을 때 사용하거나 이동
 { position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%; }
 
@@ -324,8 +317,43 @@ name속성으로 데이터 전송
 
 
 <!--css 선택자(selector)-->
+요소 선택자
+아이디 선택자
+클래스 선택자
+자손 선택자 한칸 띄우기
+직계자손 선택 >
+직계자손중에 특정요소 :nth-child()
+직계자손중에서 일부선택 
+input:focus
 
-오버플로우 넘치게 되면 잘림
+<가상 요소>
+before
+after
+selection
+
+<그림자 효과 주기>
+box-shadow:
+text-shadow: 2px 2px 5px gray;
+
+text-indent :들여쓰기
+text-overflow --수평 수직방향
+word-wrap
+word-break
+writing-mode :텍스르를 가로배치 세로배치
+
+object-fit :컨테이너에 맞게 <img> 또는 비디오<video>의 크기를 조정하는 방법 지정
+
+
+ float 속성 
+ :요소가 부동되는 방법을 지정
+ 이미지와 텍스트가 공존하기 위해 만듬
+
+ 포지션-staicky
+
+
+ 그리드 속성
+
+
 
 <!-- 반응형 레이아웃 -->
 반응형은 뷰포트 설정 필요
@@ -342,12 +370,12 @@ name속성으로 데이터 전송
 
 material.io
 
-미디어쿼리
-@media screen and (max-width: 1024px) {
+미디어쿼리  bp:브래이크포인트
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .card_4column {flex-wrap: wrap;}
 }
 
-반응형 웹디자인 프레임워크 : 부트스트랩
+반응형 웹-적응형 웹:네이버처럼 모바일 버전 따로 있음 m
 
 
 <!-- <script> 요소 --> 
@@ -368,13 +396,17 @@ material.io
  메소드는 객체에서 수행할 수 잇는 조치
  메소드는 함수정의로 특성에 저장됨
 
+ 변수:parameters 인수:arguments
+
+
 <새 날짜 객체를 만드는 방법> 4개
 new Date()   ----현재 날짜와 시간으로 새 날짜 객체를 만듬
 new Date(year,month,day,hours,minutes,seconds,milliseconds)
 new Date(milliseconds)    ----쓸일 없음 70년부터 초를 계산
 new Date(date string)
 
-getTimezoneOffset()
+<함수 게양> (function hoisting)
+선언을 현재 범위의 맨 위로 이동하는
 
 
 <!-- W3C DOM -->
@@ -391,7 +423,7 @@ getTimezoneOffset()
 클래스와 라이브러리가 합쳐진 형태
 
 <프레임워크>
-Bootstrap.com -무료
+Bootstrap.com -무료  (반응형 웹 디자인)
 윅스 -이스라엘만듬 외국서버 
 스퀘어 스페이스-외국서버
 아임웹 -한국꺼
@@ -400,6 +432,8 @@ Framer.com
 <개발자 툴>
 html
 css
+sass css의 라이브러리
+
 JS
 jQuery  자바스크립트의 라이브러리
 Angular JS
@@ -411,3 +445,28 @@ SQL
 리눅스/맥/윈도우
 
 API : 어플리케이션 프로그래밍 인터페이스
+
+
+
+<!--웹폰트--> 구글폰트
+트루타입글꼴 TTF
+오픈타입글꼴 OTF
+          WTF
+
+
+
+
+<!-- 참고 사이트 -->
+그라디언트 컬러 표현 코드가 따로 있음 --> https://cssgradient.io/
+웹브라우저 별 지원가능한 언어속성을 검색하면 알려줌 --> https://caniuse.com/
+doctype 별 문법 검사 --> https://validator.w3.org/
+
+
+
+<!-- 제이쿼리 -->
+브라우저 비 호환성을 처리하고 html dom 조작, 이벤트 처리, 애니메이션 및 에이젝스를 단순화
+코드 보기, 문서 객체 모델 찾기, 애니메이션 만들기, 이벤트 제어, Ajax 개발을 쉽게 할 수 있다
+
+스크립트 코드 로딩 링크 필요 
+문법이 js보다 간단함
+
